@@ -1,0 +1,23 @@
+{
+	"name": "fodorxyz/owncloud",
+	"installpath": "/tmp/fodor-owncloud/",
+	"provisioner": "provisioner.sh",
+	"links": [
+		{
+			"title": "OwnCloud Backend",
+			"url": "http://{{DOMAIN}}/"
+		},
+		{
+			"title": "Getting Started",
+			"url": "https://owncloud.org/install/"
+		}
+	],
+	"size": {
+		"suggested": "2gb",
+		"required": "512mb"
+	},
+	"distro": "ubuntu-14-04-x64",
+	"description": "Automatically sets up an OwnCloud instance",
+	"keywords": ["fodor", "owncloud"],
+	"homepage": "https://github.com/fodorxyz/owncloud",
+}
