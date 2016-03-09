@@ -19,5 +19,5 @@
 	"distro": "ubuntu-14-04-x64",
 	"description": "Automatically sets up an OwnCloud instance",
 	"keywords": ["fodor", "owncloud"],
-	"homepage": "https://github.com/fodorxyz/owncloud",
+	"homepage": "https://github.com/fodorxyz/owncloud"
 }
