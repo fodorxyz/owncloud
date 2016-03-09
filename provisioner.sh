@@ -4,5 +4,5 @@ wget -nv https://download.owncloud.org/download/repositories/stable/xUbuntu_14.0
 apt-key add - < Release.key
 
 echo 'deb http://download.owncloud.org/download/repositories/stable/xUbuntu_14.04/ /' >> /etc/apt/sources.list.d/owncloud.list
-apt-get update
-apt-get install owncloud php5-cli php5-curl php5-intl
+apt-get -y update
+apt-get -y install owncloud php5-cli php5-curl php5-intl
