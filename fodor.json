@@ -5,7 +5,7 @@
 	"links": [
 		{
 			"title": "OwnCloud Backend",
-			"url": "http://{{DOMAIN}}/"
+			"url": "http://{{DOMAIN}}/owncloud"
 		},
 		{
 			"title": "Getting Started",
