@@ -1,1 +1,4 @@
 # owncloud
+
+
+MySQL password: mysqlsecretpassword
