@@ -2,6 +2,9 @@
 	"name": "fodorxyz/owncloud",
 	"installpath": "/tmp/fodor-owncloud/",
 	"provisioner": "provisioner.sh",
+	"text": {
+		"complete": "Username: fodor / Password: fodor - please change straight away! :-)"
+	},
 	"links": [
 		{
 			"title": "OwnCloud Backend",
