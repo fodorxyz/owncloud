@@ -10,9 +10,9 @@ apt-get -y update
 debconf-set-selections <<< 'mysql-server mysql-server/root_password password mysqlsecretpassword'
 debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password mysqlsecretpassword'
 
+apt-get -y install mysql-server
 mysql -uroot -pmysqlsecretpassword -e 'CREATE DATABASE IF NOT EXISTS owncloud;'
 mysql -uroot -pmysqlsecretpassword -e 'GRANT ALL ON owncloud.* to "owncloud"@"localhost" IDENTIFIED BY "owncloudsecret";'
-apt-get -y install mysql-server
 
 
 apt-get -y install owncloud php5-cli php5-curl php5-intl
