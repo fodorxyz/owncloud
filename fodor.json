@@ -3,7 +3,7 @@
 	"installpath": "/tmp/fodor-owncloud/",
 	"provisioner": "provisioner.sh",
 	"text": {
-		"complete": "Username: fodor / Password: fodor - please change straight away! :-)"
+		"complete": "Congratulations, OwnCloud is awesome!"
 	},
 	"links": [
 		{
@@ -22,5 +22,17 @@
 	"distro": "ubuntu-14-04-x64",
 	"description": "Automatically sets up an OwnCloud instance",
 	"keywords": ["fodor", "owncloud"],
-	"homepage": "https://github.com/fodorxyz/owncloud"
+	"homepage": "https://github.com/fodorxyz/owncloud",
+	"inputs": [
+		{
+			"title": "Admin Username",
+			"name": "admin_username",
+			"type": "string"
+		},
+		{
+			"title": "Admin Password",
+			"name": "admin_password",
+			"type": "password"
+		}
+	]
 }

@@ -17,6 +17,6 @@ mysql -uroot -pmysqlsecretpassword -e 'GRANT ALL ON owncloud.* to "owncloud"@"lo
 
 apt-get -y install owncloud php5-cli php5-curl php5-intl
 
-sudo -u www-data php /var/www/owncloud/occ maintenance:install --admin-user=fodor --admin-pass=fodor --database=mysql --database-name=owncloud --database-user=owncloud --database-pass=owncloudsecret
+sudo -u www-data php /var/www/owncloud/occ maintenance:install --admin-user=$ADMIN_USERNAME --admin-pass=$ADMIN_PASSWORD --database=mysql --database-name=owncloud --database-user=owncloud --database-pass=owncloudsecret
 
 sed -i -e "s/0 => 'localhost',/0 => 'localhost',\n    1 => '$DOMAIN'/g" -e "s/http:\/\/localhost/http:\/\/$DOMAIN/g" /var/www/owncloud/config/config.php
