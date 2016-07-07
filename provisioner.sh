@@ -16,8 +16,7 @@ apt-get -y install mysql-server
 mysql -u root -p '${RANDOM_PASSWORD}' -e 'CREATE DATABASE IF NOT EXISTS owncloud;'
 mysql -u root -p '${RANDOM_PASSWORD}' -e "GRANT ALL ON owncloud.* to 'owncloud'@'localhost' IDENTIFIED BY '${OWNCLOUD_DB_PASSWORD}';"
 
-apt-get -y install owncloud php5-cli php5-curl php5-intl
-
+apt-get -y install owncloud php5-cli php5-curl php5-intl php5-gd php5-json php5-mcrypt php5-imagick
 
 sudo -u www-data php /var/www/owncloud/occ maintenance:install --admin-user=$ADMIN_USERNAME --admin-pass=$ADMIN_PASSWORD --database=mysql --database-name=owncloud --database-user=owncloud --database-pass=${OWNCLOUD_DB_PASSWORD}
 
