@@ -23,6 +23,7 @@
 	"description": "Automatically sets up an OwnCloud instance",
 	"keywords": ["fodor", "owncloud"],
 	"homepage": "https://github.com/fodorxyz/owncloud",
+	"image": "https://owncloud.org/wp-content/themes/owncloudorgnew/assets/img/features/serverwebui.png",
 	"inputs": [
 		{
 			"title": "Admin Username",
